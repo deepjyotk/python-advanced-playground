@@ -29,7 +29,9 @@ dependencies = [
     "dependency-injector[pydantic2]>=4.48.1",
     "fastapi>=0.115.14",
     "redis>=6.2.0",
+    "requests>=2.32.4",
     "sqlalchemy[asyncio]>=2.0.41",
+    "temporalio>=1.14.0",
     "uvicorn[standard]>=0.35.0",
 ]
 
@@ -111,4 +113,5 @@ markers = [
 [tool.uv.workspace]
 members = [
     "dependency_injector/setup_config",
+    "projects/experiment_with_temporal",
 ]
